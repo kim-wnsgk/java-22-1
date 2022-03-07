@@ -3,20 +3,69 @@
     <head>  
         <meta charset="utf-8" /> 
         <title>Vitamins & Minerals</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
     <style>
+        *{font-family:'Single Day'; margin:0; padding:0;}
         ul{list-style: none;}
         #wrap{
-            margin:0 auto;
+            margin:50px auto;
             width:1000px;
             border:1px solid #cccccc;
+            text-align: center;
         }
         header{
             background-color: aqua;
         }
         header h1{
             text-align: center;
-        }   
-    </style>    
+            font-size:3em;
+        }
+        nav h2 span:nth-child(1){
+            color:#d82f8b;
+            font-size:1.2em;
+        }
+        nav h2 span:nth-child(2){
+            color:#df7339;
+            font-size:1.2em;
+        }
+        nav button{
+            width:200px;
+            height:100px;
+            border-radius: 20px;
+            font-size:3em;
+            font-family:'Dongle';
+            border:0;
+            cursor: pointer;
+        }
+        nav button:hover{
+            font-size:3.2em;
+            font-weight:bold;
+            
+        }
+        nav #vitamins-button{
+            background-color:#d82f8b;
+        }
+        nav #minerals-button{
+            background-color:#df7339;
+        }
+        section ul{
+            text-align: left;
+        }
+        section ul li{
+            display:block;
+            border:1px solid #cccccc;
+        }
+        section ul li .cont-header{
+            border:1px solid #cccccc;
+            display:inline-block;
+            width:200px;
+            font-size:1.5em;
+        }
+    </style>
+    <script src="main.js"></script>  
     </head>
 
     <body>
@@ -25,16 +74,16 @@
                 <h1>Vitamins & Minerals</h1>
             </header>
             <nav>
-                <h2>Choose Vitamins or Minarals you want to see</h2>
+                <h2>Choose <span>Vitamins</span> or <span>Minarals</span> you want to see more information</h2>
                 <button id="vitamins-button">Vitamins</button>
                 <button id="minerals-button">Minerals</button>
             </nav>
             <section>
                 <ul>
-                    <li></li><!--name-->
-                    <li></li><!--What it does-->
-                    <li></li><!--Where it is found-->
-                    <li></li><!--Daily value-->
+                    <li><span class="cont-header">name</span><span class="contents">sdfds</span></li><!--name-->
+                    <li><span class="cont-header">What it does?</span><span class="contents"></span></li><!--What it does-->
+                    <li><span class="cont-header">Where it is found?</span><span class="contents"></span></li><!--Where it is found-->
+                    <li><span class="cont-header">Daily value</span><span class="contents"></span></li><!--Daily value-->
                 </ul>
             </section>
             <footer>
