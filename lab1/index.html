@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
     <style>
         *{font-family:'Single Day'; margin:0; padding:0;}
+        a{text-decoration:none;}
         ul{list-style: none;}
         #wrap{
             margin:50px auto;
@@ -16,12 +17,15 @@
             border:1px solid #cccccc;
             text-align: center;
         }
-        header{
-            background-color: aqua;
-        }
+        
         header h1{
+            height:100px;
+            line-height: 100px;
+            background-color: aqua;
             text-align: center;
-            font-size:3em;
+            font-size:4em;
+            color:beige;
+            text-shadow: #d82f8b 2px 2px;
         }
         nav h2 span:nth-child(1){
             color:#d82f8b;
@@ -51,27 +55,53 @@
         nav #minerals-button{
             background-color:#df7339;
         }
-        section ul{
-            text-align: left;
+        section{
+            margin:20px;
         }
-        section ul li{
+        section #select{
+            display:none;
+            height:100px;
+            text-align:center;
+        }
+        section #select li{
+            cursor: pointer;
+            display:inline-block;
+            margin-top:10px;
+            width:100px;
+            height:40px;
+            border-radius:10px;
+            line-height:40px;
+            background-color: #cccccc;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        section #contents{
+            display:none;
+            text-align: left;
+            margin-top:50px;
+        }
+        section #contents li{
             display:block;
             border:1px solid #cccccc;
         }
-        section ul li .cont-header{
-            border:1px solid #cccccc;
-            display:inline-block;
-            width:200px;
-            font-size:1.5em;
+        section #contents li .cont-header{
+            font-size:2em;
+            text-decoration:underline;
         }
+        section #contents li div{
+            margin:5px;
+
+        }
+        
     </style>
-    <script src="main.js"></script>  
+    
     </head>
 
     <body>
         <div id="wrap">
             <header>
-                <h1>Vitamins & Minerals</h1>
+                <a href='index.html'><h1>Vitamins & Minerals</h1></a>
             </header>
             <nav>
                 <h2>Choose <span>Vitamins</span> or <span>Minarals</span> you want to see more information</h2>
@@ -79,16 +109,35 @@
                 <button id="minerals-button">Minerals</button>
             </nav>
             <section>
-                <ul>
-                    <li><span class="cont-header">name</span><span class="contents">sdfds</span></li><!--name-->
-                    <li><span class="cont-header">What it does?</span><span class="contents"></span></li><!--What it does-->
-                    <li><span class="cont-header">Where it is found?</span><span class="contents"></span></li><!--Where it is found-->
-                    <li><span class="cont-header">Daily value</span><span class="contents"></span></li><!--Daily value-->
+                <ul id="select">
+                    <li class="zero selection">0</li>
+                    <li class="one selection">1</li>
+                    <li class="two selection">2</li>
+                    <li class="three selection">3</li>
+                    <li class="four selection">4</li>
+                    <li class="five selection">5</li>
+                    <li class="six selection">6</li>
+                    <br/>
+                    <li class="seven selection">7</li>
+                    <li class="eight selection">8</li>
+                    <li class="nine selection">9</li>
+                    <li class="ten selection">10</li>
+                    <li class="eleven selection">11</li>
+                    <li class="twelve selection">12</li>
+                    <li class="thirteen selection">13</li>
                 </ul>
+                <ul id="contents">
+                    <li><div class="cont-header">name</div><div class="name" style="font-weight:bold;"></div></li><!--name-->
+                    <li><div class="cont-header">What it does?</div><div class="does"></div></li><!--What it does-->
+                    <li><div class="cont-header">Where it is found?</div><div class="found"></div></li><!--Where it is found-->
+                    <li><div class="cont-header">Daily value</div><div class="value"></div></li><!--Daily value-->
+                </ul>
+                
             </section>
             <footer>
 
             </footer>
         </div>
+        <script src="main.js"></script>  
     </body>
 </html>
