@@ -4,7 +4,6 @@
         <meta charset="utf-8" /> 
         <title>Vitamins & Minerals</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
     <style>
@@ -14,7 +13,6 @@
         #wrap{
             margin:50px auto;
             width:1000px;
-            border:1px solid #cccccc;
             text-align: center;
         }
         
@@ -25,6 +23,7 @@
             text-align: center;
             font-size:4em;
             color:beige;
+            border-radius: 20px;
             text-shadow: #d82f8b 2px 2px;
         }
         nav h2 span:nth-child(1){
@@ -76,6 +75,9 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
+        section #select li:hover{
+            text-decoration:underline;
+        }
         section #contents{
             display:none;
             text-align: left;
@@ -91,9 +93,18 @@
         }
         section #contents li div{
             margin:5px;
-
         }
-        
+        footer{
+            float:right;
+        }
+        footer h6{
+            text-align:left;
+            color:#cccccc;
+            font-family: none;
+        }
+        footer h6::first-line{
+            font-size:1.5em;
+        }
     </style>
     
     </head>
@@ -127,15 +138,20 @@
                     <li class="thirteen selection">13</li>
                 </ul>
                 <ul id="contents">
-                    <li><div class="cont-header">name</div><div class="name" style="font-weight:bold;"></div></li><!--name-->
+                    <li><div class="cont-header">Name is</div><div class="name" style="font-weight:bold;"></div></li><!--name-->
                     <li><div class="cont-header">What it does?</div><div class="does"></div></li><!--What it does-->
                     <li><div class="cont-header">Where it is found?</div><div class="found"></div></li><!--Where it is found-->
-                    <li><div class="cont-header">Daily value</div><div class="value"></div></li><!--Daily value-->
+                    <li><div class="cont-header">Daily value is</div><div class="value"></div></li><!--Daily value-->
                 </ul>
                 
             </section>
+            <hr />
             <footer>
-
+                <h6>lab01<br/>
+                    학번 : 32181046<br/>
+                    학과 : 컴퓨터공학과<br/>
+                    이름 : 김준하<br/>
+                </h6>
             </footer>
         </div>
         <script src="main.js"></script>  
