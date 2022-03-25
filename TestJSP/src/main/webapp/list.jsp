@@ -34,8 +34,8 @@
 						<td><%= p.getName() %></td>
 						<td><%= p.getAge() %></td>
 						<td><%= p.getGender() %></td>
-						<td><a href="detailView.jsp?name=<%= p.getName() %>" class="btn btn-secondary" role="button"> Detail &raquo;</a>
-					</td>
+						<td><a href="detailView.jsp?name=<%= p.getName() %>" class="btn btn-secondary" role="button"> Detail &raquo;</a></td>
+					</tr>
 			<%
 				}
 			%>
