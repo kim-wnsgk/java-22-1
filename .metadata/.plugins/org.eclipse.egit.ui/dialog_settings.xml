@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="0"/>
+<<<<<<< HEAD
 	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Users\kim_j\java-22-1\.git"/>
+=======
+	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Users\User\java-22-1\.git"/>
+>>>>>>> fbbf481bca27ca11abaa9c9e4fe87f2beddf1cfa
 	<section name="GitImportWizard">
 		<item key="GitProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
 	</section>
