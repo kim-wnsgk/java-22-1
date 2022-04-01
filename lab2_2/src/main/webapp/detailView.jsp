@@ -31,7 +31,7 @@
 		</ul>
 		
 		<jsp:include page="footer.jsp">
-			<jsp:param name="lab" value="lab2_1"/>
+			<jsp:param name="lab" value="lab2_2"/>
 			<jsp:param name="course" value="Computer engineering"/>
 			<jsp:param name="number" value="32181046"/>
 			<jsp:param name="name" value="Kim Junha"/>

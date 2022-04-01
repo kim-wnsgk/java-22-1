@@ -7,11 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div id="wrap" style="margin:0 auto; background:#eeeeee">
+	<div id="wrap" style="margin:0 auto;">
 		<jsp:include page="header.jsp"/>
-		<jsp:include page="list.jsp"/>
+		<jsp:include page="login.jsp"/>
 		<jsp:include page="footer.jsp">
-			<jsp:param name="lab" value="lab2_1"/>
+			<jsp:param name="lab" value="lab2_2"/>
 			<jsp:param name="course" value="Computer engineering"/>
 			<jsp:param name="number" value="32181046"/>
 			<jsp:param name="name" value="Kim Junha"/>
