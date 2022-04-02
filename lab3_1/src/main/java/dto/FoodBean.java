@@ -4,6 +4,7 @@ public class FoodBean {
 	public String sampleId;
 	protected String name;  // 식품명
 	protected String category;  // 식품상세분류
+	protected int serving_size;  // 제공 사이즈
 	protected double calorie;  // 에너지(kcal)
 	protected double water;  // 수분(g)
 	protected double protein;  // 단백질(g)
@@ -75,6 +76,12 @@ public class FoodBean {
 	}
 	public void setCategory(String category) {
 		this.category = category;
+	}
+	public int getServing_size() {
+		return serving_size;
+	}
+	public void setServing_size(int serving_size) {
+		this.serving_size = serving_size;
 	}
 	public double getCalorie() {
 		return calorie;

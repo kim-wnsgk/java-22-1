@@ -1,11 +1,17 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.Statement;
 import java.util.List;
 
 import dto.FoodBean;
+import jdbc.ConnectionProvider;
 
 public class FoodDaoImpl implements FoodDao {
 
+	Connection conn = ConnectionProvider.getConnection();
+	Statement stmt = null;
+	
 	@Override
 	public int insert(FoodBean bean) {
 		// TODO Auto-generated method stub

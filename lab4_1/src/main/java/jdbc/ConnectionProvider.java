@@ -15,12 +15,18 @@ public class ConnectionProvider {
 		private static final String USER = "root";
 		private static final String PASS = "170725Kjh!";
 
-	static Connection getConnection() throws SQLException {
+	public static Connection getConnection() {
 		try {
 			Class.forName(JDBC_DRIVER); //STEP 2: Register JDBC driver
 		} catch (ClassNotFoundException e) {
 			e.getMessage();
 		} 
-		return DriverManager.getConnection(DB_URL,USER,PASS); //STEP 3: Open a connection
+		try {
+			return DriverManager.getConnection(DB_URL,USER,PASS);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		} //STEP 3: Open a connection
 	}
 }

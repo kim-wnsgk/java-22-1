@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="dto.FoodBean"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="jdbc.ConnectionProvider"/>
 </qualifiedTypeNameHistroy>
