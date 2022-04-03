@@ -1,6 +1,9 @@
 package dao;
 
 import java.sql.Connection;
+import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
@@ -14,14 +17,26 @@ public class FoodDaoImpl implements FoodDao {
 	
 	@Override
 	public int insert(FoodBean bean) {
-		// TODO Auto-generated method stub
-		return 0;
+		String command = "INSERT INTO mfdsfood VALUES ('getSampleId()', 'getName()', 'getCategory()', 'getCalorie()', 'getWater()', 'getProtein()', 'getFat()', 'getCarbohydrate()', 'getSugars()', 'getFiber()', 'getCalcium()', 'getIron()', 'getMagnesium()', 'getPhosphorus()', 'getPotassium()', 'getSodium()', 'getZinc()', 'getCopper()', 'getManganese()', 'getSelenium()');\r\n";
+		int ret = 0;
+		try {
+			ret = stmt.executeUpdate(command);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ret;
 	}
 
 	@Override
 	public int delete(String id) {
-		// TODO Auto-generated method stub
-		return 0;
+		String command = "DELETE from mfdsfood where sampleId='" + id + "'";
+		int ret = 0;
+		try {
+			ret = stmt.executeUpdate(command);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ret;
 	}
 
 	@Override
@@ -32,7 +47,34 @@ public class FoodDaoImpl implements FoodDao {
 
 	@Override
 	public FoodBean select(String id) {
-		// TODO Auto-generated method stub
+		String sql = "SELECT * FROM mfdsfood WHERE sampleId='" + id + "'";
+		ResultSet rs;
+		try {
+			FoodBean fb = new FoodBean();
+			rs = stmt.executeQuery(sql);
+			while(rs.next()) {
+				//Retrieve by column name
+				String name  = rs.getString("name");
+				String owner  = rs.getString("owner");
+				String species  = rs.getString("species");
+				String gender = rs.getString("gender");
+				Date birth = rs.getDate("birth");
+				Date death = rs.getDate("death");
+
+				//Display values
+				System.out.print("name: " + name);
+				System.out.print(", owner: " + owner);
+				System.out.print(", species: " + species);
+				System.out.print(", sex: " + gender);
+				System.out.print(", birth: " + birth);
+				System.out.println(", death: " + death);
+			}
+			System.out.println("end of rs..");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		return null;
 	}
 
