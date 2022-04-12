@@ -72,6 +72,7 @@ public class SampleDBPetTest {
 	private static void printData(ResultSet rs) throws SQLException {
 		while(rs.next()) {
 			//Retrieve by column name
+			System.out.println(rs.getString("name"));
 			String name  = rs.getString("name");
 			String owner  = rs.getString("owner");
 			String species  = rs.getString("species");

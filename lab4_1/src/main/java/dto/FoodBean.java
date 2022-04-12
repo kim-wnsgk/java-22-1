@@ -1,10 +1,11 @@
 package dto;
 
 public class FoodBean {
-	public String sampleId;
+	protected String sample_id;
 	protected String name;  // 식품명
 	protected String category;  // 식품상세분류
 	protected double calorie;  // 에너지(kcal)
+	protected double serving_size;  // 용량
 	protected double water;  // 수분(g)
 	protected double protein;  // 단백질(g)
 	protected double fat;  // 지방(g)
@@ -22,17 +23,19 @@ public class FoodBean {
 	protected double manganese;  // 망간(mg)
 	protected double selenium;  // 셀레늄(ug)
 	
-	
-	// constructor
-	public FoodBean(String sampleId, String name, String category, double calorie, double water, double protein,
-			double fat, double carbohydrate, double sugars, double fiber, double calcium, double iron, double magnesium,
-			double phosphorus, double potassium, double sodium, double zinc, double copper, double manganese,
-			double selenium) {
+	public FoodBean() {
+		
+	}
+	public FoodBean(String sample_id, String name, String category, double calorie, double serving_size, double water,
+			double protein, double fat, double carbohydrate, double sugars, double fiber, double calcium, double iron,
+			double magnesium, double phosphorus, double potassium, double sodium, double zinc, double copper,
+			double manganese, double selenium) {
 		super();
-		this.sampleId = sampleId;
+		this.sample_id = sample_id;
 		this.name = name;
 		this.category = category;
 		this.calorie = calorie;
+		this.serving_size = serving_size;
 		this.water = water;
 		this.protein = protein;
 		this.fat = fat;
@@ -51,18 +54,13 @@ public class FoodBean {
 		this.selenium = selenium;
 	}
 	
-	
-	public FoodBean() {
-		// TODO Auto-generated constructor stub
-	}
-
 
 	// getter, setter
-	public String getSampleId() {
-		return sampleId;
+	public String getSample_id() {
+		return sample_id;
 	}
-	public void setSampleId(String sampleId) {
-		this.sampleId = sampleId;
+	public void setSample_id(String sampleId) {
+		this.sample_id = sampleId;
 	}
 	public String getName() {
 		return name;
@@ -82,6 +80,13 @@ public class FoodBean {
 	public void setCalorie(double calorie) {
 		this.calorie = calorie;
 	}
+	public double getServing_size() {
+		return serving_size;
+	}
+	public void setServing_size(double serving_size) {
+		this.serving_size = serving_size;
+	}
+	
 	public double getWater() {
 		return water;
 	}
@@ -178,6 +183,5 @@ public class FoodBean {
 	public void setSelenium(double selenium) {
 		this.selenium = selenium;
 	}
-	
 	
 }

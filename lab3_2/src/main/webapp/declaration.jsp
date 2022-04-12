@@ -4,7 +4,7 @@
 <%@ page import="java.io.*" %>
 <%@ page import="java.util.*" %>
 
-<%@ page import="dto.FoodBean" %>
+<%@ page import="dto.GradeBean" %>
 <%@ page import="dao.DataImporter" %>
 <%@ page import="dao.FoodParser" %>
 
@@ -17,16 +17,16 @@
 <body>
 
 <%
-	List<List<String>> csvList = new ArrayList<List<String>>();  // csv 파일 받을 리스트
+List<List<String>> csvList = new ArrayList<List<String>>();  // csv 파일 받을 리스트
 	String csvPath = "C:/Users/User/OneDrive/바탕 화면/학교/자바/MFSD-Agriculture.csv";
 	
 	csvList = DataImporter.loadCSV(csvPath);
 	
 	FoodParser manager = new FoodParser();
-	List<FoodBean> foodList = new ArrayList<FoodBean>();
+	List<GradeBean> foodList = new ArrayList<GradeBean>();
 	
 	for (int i = 1; i < csvList.size(); i++) { 
-		FoodBean food = new FoodBean();
+		GradeBean food = new GradeBean();
 		food.setSampleId(csvList.get(i).get(0));
 		food.setName(csvList.get(i).get(1));
 		food.setCategory(csvList.get(i).get(2));
@@ -50,8 +50,6 @@
 		food.setSelenium(Double.parseDouble(csvList.get(i).get(19)));
 		manager.add(food);
 	}
-	
-	
 %>
 </body>
 </html>

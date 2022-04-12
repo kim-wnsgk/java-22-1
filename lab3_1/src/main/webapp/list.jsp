@@ -22,7 +22,7 @@
 			<th>¾Æ¿¬(mg)</th><th>±¸¸®(mg)</th><th>¸Á°£(mg)</th><th>¼¿·¹´½(ug)</th><th>detail view</th>
 		</tr>
 		<%
-			for (FoodBean f : manager.getList()) {
+		for (GradeBean f : manager.getList()) {
 				out.print(String.format(
 						"<tr>" +
 							"<td>%s</td>" +
@@ -41,7 +41,7 @@
 						f.getMagnesium(), f.getPhosphorus(), f.getPotassium(),
 						f.getSodium(), f.getZinc(), f.getCopper(), f.getManganese(), f.getSelenium()
 						));
-						%><th><a href="detailView.jsp?sampleId=<%=f.getSampleId()%>" style="font-size:1.5em;"> &raquo;</a></th><%
+		%><th><a href="detailView.jsp?sampleId=<%=f.getSampleId()%>" style="font-size:1.5em;"> &raquo;</a></th><%
 				}
 			%>
 	</table>

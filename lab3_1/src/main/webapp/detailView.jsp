@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<%@ page import="dto.FoodBean" %>
+<%@ page import="dto.GradeBean" %>
 <%@ page import="dao.FoodParser" %>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
 	<jsp:include page="header.jsp"/>
 	<%
 	String name = request.getParameter("name");
-	FoodBean food = manager.get(name);
+		GradeBean food = manager.get(name);
 	%>
 	<jsp:include page="header.jsp"/>
 	<div>

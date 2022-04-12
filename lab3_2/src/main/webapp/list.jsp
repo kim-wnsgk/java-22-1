@@ -22,7 +22,7 @@
 			<th>¾Æ¿¬(mg)</th><th>±¸¸®(mg)</th><th>¸Á°£(mg)</th><th>¼¿·¹´½(ug)</th><th>detail view</th>
 		</tr>
 		<%
-			for (FoodBean f : manager.getList()) {
+		for (GradeBean f : manager.getList()) {
 				out.print(String.format(
 						"<tr>" +
 							"<td>%s</td>" +
@@ -42,7 +42,7 @@
 						f.getSodium(), f.getZinc(), f.getCopper(), f.getManganese(), f.getSelenium()
 						));
 				}
-			%>
+		%>
 	</table>
 </body>
 </html>
