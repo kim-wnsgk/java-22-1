@@ -6,38 +6,40 @@
 <meta charset="EUC-KR">
 <title>main section</title>
 <style>
-	section ul {
-		list-style:none;
-		color:white;
+	section {
+	width:1200px;
+	margin:0 auto;
 	}
-	section ul li{
-		background:black;
-		width:200px;
-		height:50px;
-		line-height:50px;
-		margin:3px;
+	#profile{
+	position:relative;
+	float:right;
+	width:250px;
+	height:500px;
+	background:skyblue;
+	margin:20px;
+	border-radius:5px;
 	}
-	section ul li a{
-	text-align:center;
-	color:white;
+	
+	#first-row {
+	display:inline-block;
+	height:300px;
+	width:300px;
+	margin:20px;
+	background:white;
+	border-radius:5px;
 	}
+	
 </style>
 </head>
 <body>
 <section style="background:#eeeeee;">
-<ul>
-	<li>게임명</li>
-	<li><span>1</span><a href="https://www.leagueoflegends.com/ko-kr/">리그오브레전드</a></li>
-	<li><span>2</span><a href="https://www.leagueoflegends.com/ko-kr/">로스트아크</a></li>
-	<li><span>3</span><a href="https://www.leagueoflegends.com/ko-kr/">피파 온라인4</a></li>
-	<li><span>4</span><a href="https://www.leagueoflegends.com/ko-kr/">배틀그라운드</a></li>
-	<li><span>5</span><a href="https://www.leagueoflegends.com/ko-kr/">발로란트</a></li>
-	<li><span>6</span><a href="https://www.leagueoflegends.com/ko-kr/">서든어택</a></li>
-	<li><span>7</span><a href="https://www.leagueoflegends.com/ko-kr/">오버워치</a></li>
-	<li><span>8</span><a href="https://www.leagueoflegends.com/ko-kr/">던전앤파이터</a></li>
-	<li><span>9</span><a href="https://www.leagueoflegends.com/ko-kr/">메이플스토리</a></li>
-	<li><span>10</span><a href="https://www.leagueoflegends.com/ko-kr/">스타크래프트</a></li>
-</ul>
+	<div id="profile">
+	</div>
+	<div id="first-row">
+		<div>
+		
+		</div>
+	</div>
 </section>
 </body>
 </html>

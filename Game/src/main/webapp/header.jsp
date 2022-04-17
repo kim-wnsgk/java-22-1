@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Header</title>
+<title>Insert title here</title>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
 	
@@ -21,12 +21,16 @@
     height:100%;
     object-fit:cover;
 	}
+	
 	header {
+	width:1200px;
 	overflow:hidden;
 	font-family: 'Sunflower', sans-serif;
 	font-size:1.3em;
 	font-weight:bold;
+	margin:0 auto;
 	}
+	
 	#first-banner {
 	height:70px;
 	line-height:70px;
@@ -40,7 +44,6 @@
 	margin:auto;
 	padding:10px;;
 	}
-
 	#first-banner .login {
 	float:right;
 	}
@@ -56,14 +59,13 @@
 	overflow:hidden;
 	}
 	#second-banner ul li{
-	width:300px;
+	width:200px;
 	float:right;
 	text-align:center;
 	}
 	#second-banner ul li:first-child{
 	height:80px;
 	float:left;
-	border:1px solid black;
 	display:block;
 	}
 	#second-banner ul li a{
@@ -75,7 +77,7 @@
 <header>
 	<div id='first-banner'>
 		<div class="menu-icon">
-			<a href="menu.jsp"><img src="https://cdn.icon-icons.com/icons2/1674/PNG/512/menu_110986.png" alt="menu" title="menu"/></a>
+			<a href="menu.jsp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png" alt="menu" title="menu"/></a>
 		</div>
 		
 		<div class='login'>
