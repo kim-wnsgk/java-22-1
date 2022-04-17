@@ -12,21 +12,19 @@
 	}
 	section ul li{
 		background:black;
-		display:block;
 		width:200px;
 		height:50px;
 		line-height:50px;
 		margin:3px;
 	}
 	section ul li a{
-	display:block;
 	text-align:center;
 	color:white;
 	}
 </style>
 </head>
 <body>
-<section>
+<section style="background:#eeeeee;">
 <ul>
 	<li>게임명</li>
 	<li><span>1</span><a href="https://www.leagueoflegends.com/ko-kr/">리그오브레전드</a></li>
