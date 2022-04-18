@@ -50,26 +50,36 @@
 
 
 	#second-banner {
-	height:100px;
 	line-height:100px;
 	}
-	#second-banner ul{
+	#second-banner ul {
 	-webkit-padding-start:0px;
 	list-style:none;
 	overflow:hidden;
 	}
-	#second-banner ul li{
+	#second-banner ul>li{
 	width:200px;
 	float:right;
 	text-align:center;
 	}
-	#second-banner ul li:first-child{
+	#second-banner .main-menu li:first-child{
 	height:80px;
 	float:left;
 	display:block;
 	}
-	#second-banner ul li a{
+	#second-banner .main-menu li a{
 	display:block;
+	}
+	#second-banner .slide-menu {
+	display:none;  /*마우스 오버 시 보이게*/
+	font-size:0.7em;
+	line-height:30px;
+	position:absolute;
+	background:white;
+	border-radius:0 0 10px 10px;
+	z-index:1;
+	opacity:0.5;
+	width:1200px;
 	}
 </style>
 </head>
@@ -87,15 +97,41 @@
 		
 	</div>
 	<div id='second-banner'>
-		<ul>
+		<ul class='main-menu'>
 			<li><a href="index.jsp"><img src="https://www.dankook.ac.kr/html_repositories/images/www/kor_content/est_ui_int01.jpg" alt="dankook-logo"/></a></li>
 			<li><a href="#none">게임추천</a></li>
 			<li><a href="#none">커뮤니티</a></li>
 			<li><a href="#none">게임소식</a></li>
 			<li><a href="#none">프로필</a></li>
-
+		</ul>
+		<ul class='slide-menu'>
+			<li>
+				<ul class='inner-ul'>
+					<li><a href="#none">카테고리별</a></li>
+					<li><a href="#none">사용자별 추천</a></li>
+				</ul>
+			</li>
+			<li>
+				<ul class='inner-ul'>
+					<li><a href="#none">자유게시판</a></li>
+					<li><a href="#none">공략&팁</a></li>
+					<li><a href="#none">질문</a></li>
+					<li><a href="#none">추천</a></li>
+				</ul>
+			</li><li>
+				<ul class='inner-ul'>
+					<li><a href="#none">게임뉴스</a></li>
+					<li><a href="#none">패치정보</a></li>
+				</ul>
+			</li><li>
+				<ul class='inner-ul'>
+					<li><a href="#none">출석체크</a></li>
+					<li><a href="#none">회원정보</a></li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </header>
+<script type="text/javascript" src="headerScript.js"></script>
 </body>
 </html>
