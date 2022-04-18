@@ -9,24 +9,47 @@
 	section {
 	width:1200px;
 	margin:0 auto;
+	box-sizing:border-box;
+	padding-bottom:20px;
 	}
 	#profile{
 	position:relative;
 	float:right;
 	width:250px;
-	height:500px;
+	height:800px;
 	background:skyblue;
 	margin:20px;
 	border-radius:5px;
 	}
-	
-	#first-row {
+	.box {
 	display:inline-block;
-	height:300px;
-	width:300px;
-	margin:20px;
+	margin:20px 0 0 20px;
 	background:white;
 	border-radius:5px;
+
+	}
+	#first-box {
+	height:300px;
+	width:300px;
+
+	}
+	
+	#second-box {
+	height:300px;
+	width:560px;
+
+	}
+	
+	#third-box {
+	height:300px;
+	width:880px;
+
+	}
+	
+	#fourth-box {
+	height:300px;
+	width:880px;
+
 	}
 	
 </style>
@@ -34,10 +57,22 @@
 <body>
 <section style="background:#eeeeee;">
 	<div id="profile">
+	ÇÁ·ÎÇÊ
 	</div>
-	<div id="first-row">
+	<div id="first-box" class="box">
 		<div>
-		
+		</div>
+	</div>
+	<div id="second-box" class="box">
+		<div>
+		</div>
+	</div>
+	<div id="third-box" class="box">
+		<div>
+		</div>
+	</div>
+	<div id="fourth-box" class="box">
+		<div>
 		</div>
 	</div>
 </section>
