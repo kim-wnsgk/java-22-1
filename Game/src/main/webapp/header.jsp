@@ -3,100 +3,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
-	
-	* {
-	margin:0;
-	}
-	a{
-	display:inline-block;
-	text-decoration:none;
-	color:#555555;
-	}
-	img {
-	width:100%;
-    height:100%;
-    object-fit:cover;
-	}
-	
-	header {
-	width:1200px;
-	overflow:hidden;
-	font-family: 'Sunflower', sans-serif;
-	font-size:1.3em;
-	font-weight:bold;
-	margin:0 auto;
-	}
-	
-	#first-banner {
-	height:70px;
-	line-height:70px;
-	border-bottom: 1px solid #cccccc;
-	overflow:hidden;
-	}
-	#first-banner .menu-icon {
-	width:50px;
-	height:50px;
-	display:inline-block;
-	margin:auto;
-	padding:10px;;
-	}
-	#first-banner .login {
-	float:right;
-	}
-
-
-	#second-banner {
-	line-height:100px;
-	}
-	#second-banner ul {
-	-webkit-padding-start:0px;
-	list-style:none;
-	overflow:hidden;
-	}
-	#second-banner ul>li{
-	width:200px;
-	float:right;
-	text-align:center;
-	}
-	#second-banner .main-menu li:first-child{
-	height:80px;
-	float:left;
-	display:block;
-	}
-	#second-banner .main-menu li a{
-	display:block;
-	}
-	#second-banner .slide-menu {
-	display:none;  /*마우스 오버 시 보이게*/
-	font-size:0.7em;
-	line-height:30px;
-	position:absolute;
-	background:white;
-	border-radius:0 0 10px 10px;
-	z-index:1;
-	opacity:0.5;
-	width:1200px;
-	}
-</style>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<link href="headerCss.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
-	<div id='first-banner'>
-		<div class="menu-icon">
-			<a href="menu.jsp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/220px-Hamburger_icon.svg.png" alt="menu" title="menu"/></a>
-		</div>
-		
-		<div class='login'>
-			<a href="login.jsp" style="width:100px; height:40px; line-height:40px; text-align:center; border:3px solid black; border-radius:40px; margin-right:10px; color:black">로그인</a>
-			<a href="register.jsp" style="margin-right:10px; font-size:0.8em; font-weight:normal;">회원가입</a>
-		</div>
-		
+	<div id="mySidenav" class="sidenav" >
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">프로필</a>
+	  <a href="#">게임소식</a>
+	  <a href="#">커뮤니티</a>
+	  <a href="#">게임추천</a>
 	</div>
-	<div id='second-banner'>
+	<div class="border_bottom">
+		<span class="menu2" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+		<span>
+			<a href="main.jsp" style="font-family: arial;color:black;font-size:30px;">DKU</a>
+		</span>
+		<div class='login1'style="float:right">
+			<a href="login.jsp" style="width:100px; height:40px; line-height:40px; text-align:center; border:3px solid black; border-radius:40px; margin-right:10px; color:black">로그인</a>
+			<a href="signUp.jsp" style="margin-right:10px; font-size:0.8em; font-weight:normal;">회원가입</a>
+		</div>
+	</div>
+	<div id='banner'>
 		<ul class='main-menu'>
 			<li><a href="index.jsp"><img src="https://www.dankook.ac.kr/html_repositories/images/www/kor_content/est_ui_int01.jpg" alt="dankook-logo"/></a></li>
 			<li><a href="#none">게임추천</a></li>

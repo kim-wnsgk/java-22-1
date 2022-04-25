@@ -1,15 +1,22 @@
 /**
  * header.jsp의 script
  */
+function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	}	
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
-const secondBanner = document.querySelector("#second-banner");
+
+const banner = document.querySelector("#banner");
 const slideMenu = document.querySelector(".slide-menu");
 
 
-secondBanner.addEventListener("mouseover", function(){
+banner.addEventListener("mouseover", function(){
     slideMenu.style.display="block";
 });
 
-secondBanner.addEventListener("mouseout", function(){
+banner.addEventListener("mouseout", function(){
     slideMenu.style.display="none";
 });
